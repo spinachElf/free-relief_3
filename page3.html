@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>또! error!</title>
+	<style type="text/css">
+	@charset "utf-8";
+		@font-face {
+		 font-family: 'NanumBarunGothic';
+		 font-style: normal;
+		 font-weight: 400;
+		 src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+		 src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+		}
+
+		@font-face {
+		 font-family: 'NanumBarunGothic';
+		 font-style: normal;
+		 font-weight: 700;
+		 src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+		 src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+		}
+
+		@font-face {
+		 font-family: 'NanumBarunGothic';
+		 font-style: normal;
+		 font-weight: 300;
+		 src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+		 src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+		}
+
+		.nanumbarungothic * {
+		 font-family: 'NanumBarunGothic', sans-serif;
+		}
+
+		body{
+			font-family: NanumBarunGothic;
+			margin: 100px 50px;
+			background-color: #FAFAFA;
+			color: #848484;}
+		img{
+			width: 30px;
+		}
+		h1{
+			font-weight: 400;
+			color: #585858;}
+		li{
+			line-height: 1.5em;
+		}
+		li a{
+			text-decoration: none;
+			color: royalblue;}
+		.err{
+			font-size: 0.8em;
+		}
+		.lds-ring {
+			  display: inline-block;
+			  position: relative;
+			  width: 80px;
+			  height: 80px;
+			}
+		.lds-ring div {
+			  box-sizing: border-box;
+			  display: block;
+			  position: absolute;
+			  width: 64px;
+			  height: 64px;
+			  margin: 8px;
+			  border: 8px solid #fff;
+			  border-radius: 50%;
+			  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+			  border-color: #848484 transparent transparent transparent;
+			}
+		.lds-ring div:nth-child(1) {
+			  animation-delay: -0.45s;
+			}
+		.lds-ring div:nth-child(2) {
+			  animation-delay: -0.3s;
+			}
+		.lds-ring div:nth-child(3) {
+			  animation-delay: -0.15s;
+			}
+		@keyframes lds-ring {
+			  0% {
+			    transform: rotate(0deg);
+			  }
+			  100% {
+			    transform: rotate(360deg);
+			  }
+			}
+		.gone{
+			margin-left: 20px;
+			animation-name: gone;
+			animation-duration: 7s;
+			animation-fill-mode: forwards;
+		}
+		@keyframes gone{
+			from{opacity: 100;}
+			99%{opacity: 100;}
+			to{opacity: 0;}
+		}
+		.go{
+			margin-top: 50px;
+			animation-name: dis;
+			animation-duration: 7s;
+		}
+
+		@keyframes dis{
+			from{opacity: 0;}
+			99%{opacity: 0;}
+			to{opacity: 100;}
+		}
+		.move{
+			padding: 5px 20px;
+			font-size: 0.9em;
+			background: linear-gradient(white, #C4CCE9);
+			text-decoration: none;
+			color: black;
+			border: 1px solid black;
+			border-radius: 5px;
+		}
+		.move:hover{
+			background: linear-gradient(#C4CCE9,white);
+		}
+	</style>
+</head>
+<body>
+	<img src="icon.png">
+	<h1>인터넷에 연결... 되어있음</h1>
+	<p>프록시 서버 문제가 발생 안했고 주소가 잘못되지도 않았습니다.</p>
+	<p>다음을 시도:</p>
+	<ul>
+		<li>또 기다리기</li>
+		<li><a href="https://www.rainymood.com">빗소리 들으며 허망한 마음 가다듬기</a></li>
+		<li><a href="https://www.zoomquilt.org">끝없이 확대되는 괴상한 사이트 구경하기</a></li>
+		<li>이번엔 7초만 기다리세요! 해결할게요.</li>
+	</ul>
+	<p class="err">ERR_PROXY_CONNECTION_FAILED</p>
+	<div class="gone">
+		<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+	</div>
+	<div class="go">
+		<p>안심인가 뭔가 받으러 가기 힘드네요. 다시 가봅시다!</p>
+		<a href="https://spinachelf.github.io/free-relief_5/" class="move">이동</a>
+	</div>
+</body>
+</html>
